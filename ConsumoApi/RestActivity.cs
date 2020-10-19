@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using System.Collections.Generic;
+using System.Net.Http;
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
+using System.Web;
+using Newtonsoft.Json;
 
 namespace ConsumoApi
 {
@@ -16,19 +12,29 @@ namespace ConsumoApi
     public class RestActivity : Activity
     {
         List<Usuario> usuarioList = new List<Usuario>();
+        ListView listView;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_rest);
-            ListView listView = FindViewById<ListView>(Resource.Id.list_rest_usuario);
-            UsuarioAdapter adapter = new UsuarioAdapter(this, usuarioList);
-            GetUsuario();
-            listView.Adapter = adapter;
+            GetUsuariosAsync();
+            listView = FindViewById<ListView>(Resource.Id.list_rest_usuario);
         }
 
-        private void GetUsuario()
+        private async void GetUsuariosAsync()
         {
-            
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync($"http://192.168.0.109:5000/api/usuarios");
+                var content = await response.Content.ReadAsStringAsync();
+
+                usuarioList = JsonConvert.DeserializeObject<List<Usuario>>(content);
+
+                UsuarioAdapter adapter = new UsuarioAdapter(this, usuarioList);
+
+                listView.Adapter = adapter;
+            }
+
         }
     }
 }
