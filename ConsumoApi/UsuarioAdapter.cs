@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Runtime.Serialization.Json;
 using System.Text;
 
 using Android.App;
@@ -9,6 +12,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.IO;
+using Org.Apache.Http.Conn;
 
 namespace ConsumoApi
 {
@@ -45,15 +50,45 @@ namespace ConsumoApi
             txtTelefone.Text = usuarioList[position].telefone;
             btnEdit.Click += delegate
             {
-                Toast.MakeText(context, "Editando", ToastLength.Short);
+                Intent intent = new Intent(context, typeof(CadatrarUsuarioActivity));
+                var parseJson = new DataContractJsonSerializer(typeof(Usuario));
+                MemoryStream memory = new MemoryStream();
+                parseJson.WriteObject(memory, usuarioList[position]);
+                var jsonString = Encoding.UTF8.GetString(memory.ToArray());
+                intent.PutExtra("usuario", jsonString);
+                context.StartActivity(intent);
 
             };
 
             btnDelete.Click += delegate
             {
-                Toast.MakeText(context, "Deletando", ToastLength.Short);
+                new AlertDialog.Builder(context).SetTitle("Excluindo dados").SetMessage("Você realmente deseja excluir esse registro?")
+                .SetPositiveButton("Sim", (sender, events) =>
+                {
+                    DeletarUsuario(GetItemId(position));
+                })
+                .SetNegativeButton("Não", (sender, events) =>
+                {
+
+                })
+                .Show();
             };
             return convertView;
+        }
+
+        private async void DeletarUsuario(long id)
+        {
+            using (var client = new HttpClient())
+            {
+                var response = await client.DeleteAsync($"http://192.168.0.109:5000/api/usuarios/{id}");
+                if (response.IsSuccessStatusCode)
+                {
+                    Toast.MakeText(context, "Exluído com sucesso", ToastLength.Short);
+                    var index = usuarioList.FindIndex(u => u.id == id);
+                    usuarioList.RemoveAt(index);
+                    this.NotifyDataSetChanged();
+                }
+            }
         }
     }
 }

@@ -3222,68 +3222,68 @@ namespace ConsumoApi
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F080019
-			public const int actions = 2131230745;
+			// aapt resource value: 0x7F080018
+			public const int actions = 2131230744;
+			
+			// aapt resource value: 0x7F080007
+			public const int action_bar = 2131230727;
 			
 			// aapt resource value: 0x7F080008
-			public const int action_bar = 2131230728;
+			public const int action_bar_activity_content = 2131230728;
 			
 			// aapt resource value: 0x7F080009
-			public const int action_bar_activity_content = 2131230729;
+			public const int action_bar_container = 2131230729;
 			
 			// aapt resource value: 0x7F08000A
-			public const int action_bar_container = 2131230730;
+			public const int action_bar_root = 2131230730;
 			
 			// aapt resource value: 0x7F08000B
-			public const int action_bar_root = 2131230731;
+			public const int action_bar_spinner = 2131230731;
 			
 			// aapt resource value: 0x7F08000C
-			public const int action_bar_spinner = 2131230732;
+			public const int action_bar_subtitle = 2131230732;
 			
 			// aapt resource value: 0x7F08000D
-			public const int action_bar_subtitle = 2131230733;
+			public const int action_bar_title = 2131230733;
 			
 			// aapt resource value: 0x7F08000E
-			public const int action_bar_title = 2131230734;
+			public const int action_container = 2131230734;
 			
 			// aapt resource value: 0x7F08000F
-			public const int action_container = 2131230735;
+			public const int action_context_bar = 2131230735;
 			
 			// aapt resource value: 0x7F080010
-			public const int action_context_bar = 2131230736;
+			public const int action_divider = 2131230736;
 			
 			// aapt resource value: 0x7F080011
-			public const int action_divider = 2131230737;
+			public const int action_image = 2131230737;
 			
 			// aapt resource value: 0x7F080012
-			public const int action_image = 2131230738;
+			public const int action_menu_divider = 2131230738;
 			
 			// aapt resource value: 0x7F080013
-			public const int action_menu_divider = 2131230739;
+			public const int action_menu_presenter = 2131230739;
 			
 			// aapt resource value: 0x7F080014
-			public const int action_menu_presenter = 2131230740;
+			public const int action_mode_bar = 2131230740;
 			
 			// aapt resource value: 0x7F080015
-			public const int action_mode_bar = 2131230741;
+			public const int action_mode_bar_stub = 2131230741;
 			
 			// aapt resource value: 0x7F080016
-			public const int action_mode_bar_stub = 2131230742;
+			public const int action_mode_close_button = 2131230742;
 			
 			// aapt resource value: 0x7F080017
-			public const int action_mode_close_button = 2131230743;
+			public const int action_text = 2131230743;
 			
-			// aapt resource value: 0x7F080018
-			public const int action_text = 2131230744;
+			// aapt resource value: 0x7F080019
+			public const int activity_chooser_view_content = 2131230745;
 			
 			// aapt resource value: 0x7F08001A
-			public const int activity_chooser_view_content = 2131230746;
+			public const int add = 2131230746;
 			
 			// aapt resource value: 0x7F08001B
-			public const int add = 2131230747;
-			
-			// aapt resource value: 0x7F080002
-			public const int Adicionar = 2131230722;
+			public const int adicionar_dados = 2131230747;
 			
 			// aapt resource value: 0x7F08001C
 			public const int alertTitle = 2131230748;
@@ -3408,8 +3408,8 @@ namespace ConsumoApi
 			// aapt resource value: 0x7F080042
 			public const int coordinator = 2131230786;
 			
-			// aapt resource value: 0x7F080003
-			public const int CTRL = 2131230723;
+			// aapt resource value: 0x7F080002
+			public const int CTRL = 2131230722;
 			
 			// aapt resource value: 0x7F080043
 			public const int custom = 2131230787;
@@ -3480,8 +3480,8 @@ namespace ConsumoApi
 			// aapt resource value: 0x7F080059
 			public const int forever = 2131230809;
 			
-			// aapt resource value: 0x7F080004
-			public const int FUNCTION = 2131230724;
+			// aapt resource value: 0x7F080003
+			public const int FUNCTION = 2131230723;
 			
 			// aapt resource value: 0x7F08005A
 			public const int ghost_view = 2131230810;
@@ -3564,8 +3564,8 @@ namespace ConsumoApi
 			// aapt resource value: 0x7F080074
 			public const int message = 2131230836;
 			
-			// aapt resource value: 0x7F080005
-			public const int META = 2131230725;
+			// aapt resource value: 0x7F080004
+			public const int META = 2131230724;
 			
 			// aapt resource value: 0x7F080075
 			public const int middle = 2131230837;
@@ -3705,8 +3705,8 @@ namespace ConsumoApi
 			// aapt resource value: 0x7F0800A1
 			public const int select_dialog_listview = 2131230881;
 			
-			// aapt resource value: 0x7F080006
-			public const int SHIFT = 2131230726;
+			// aapt resource value: 0x7F080005
+			public const int SHIFT = 2131230725;
 			
 			// aapt resource value: 0x7F0800A3
 			public const int shortcut = 2131230883;
@@ -3762,8 +3762,8 @@ namespace ConsumoApi
 			// aapt resource value: 0x7F0800B4
 			public const int submit_area = 2131230900;
 			
-			// aapt resource value: 0x7F080007
-			public const int SYM = 2131230727;
+			// aapt resource value: 0x7F080006
+			public const int SYM = 2131230726;
 			
 			// aapt resource value: 0x7F0800B5
 			public const int tabMode = 2131230901;

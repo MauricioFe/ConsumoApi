@@ -1,10 +1,3 @@
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\build.props
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\adb.props
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\ConsumoApi.csprojAssemblyReference.cache
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
-C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\res.flag
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Debug\ConsumoApi.dll
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Debug\ConsumoApi.pdb
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Debug\com.companyname.consumoapi.apk
@@ -12,6 +5,13 @@ C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Deb
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Debug\com.companyname.consumoapi-Signed.aab
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Debug\com.companyname.consumoapi-Signed.apk
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\bin\Debug\com.companyname.consumoapi-Signed.apk.idsig
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\build.props
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\adb.props
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\ConsumoApi.csprojAssemblyReference.cache
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\res.flag
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\R.txt
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\R.cs.flag
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\ConsumoApi.csproj.CoreCompileInputs.cache

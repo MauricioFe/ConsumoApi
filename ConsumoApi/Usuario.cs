@@ -1,4 +1,8 @@
 ﻿using Android.Database.Sqlite;
+using Java.Interop;
+using Java.IO;
+using Org.Apache.Http.Entity;
+using System;
 
 namespace ConsumoApi
 {
