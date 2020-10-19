@@ -243,3 +243,5 @@ C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Deb
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\res\layout\activity_rest.xml
+C:\Users\mauri\Desktop\Treinamento\Android\Xamarin\ConsumoApi\ConsumoApi\obj\Debug\90\android\src\crc64aec9c908ce39cd60\RestActivity.java
