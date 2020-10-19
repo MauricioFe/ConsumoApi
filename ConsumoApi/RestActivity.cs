@@ -21,6 +21,14 @@ namespace ConsumoApi
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_rest);
             ListView listView = FindViewById<ListView>(Resource.Id.list_rest_usuario);
+            UsuarioAdapter adapter = new UsuarioAdapter(this, usuarioList);
+            GetUsuario();
+            listView.Adapter = adapter;
+        }
+
+        private void GetUsuario()
+        {
+            
         }
     }
 }
