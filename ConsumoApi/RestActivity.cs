@@ -15,11 +15,12 @@ namespace ConsumoApi
     [Activity(Label = "RestActivity")]
     public class RestActivity : Activity
     {
+        List<Usuario> usuarioList = new List<Usuario>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_rest);
-            
+            ListView listView = FindViewById<ListView>(Resource.Id.list_rest_usuario);
         }
     }
 }
