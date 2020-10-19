@@ -28,7 +28,7 @@ namespace ConsumoApi
 
         public override long GetItemId(int position)
         {
-            return usuarioList[position].Id;
+            return usuarioList[position].id;
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
@@ -41,8 +41,8 @@ namespace ConsumoApi
             ImageView btnDelete = convertView.FindViewById<ImageView>(Resource.Id.item_list_delete);
 
 
-            txtNome.Text = usuarioList[position].Nome;
-            txtTelefone.Text = usuarioList[position].Telefone;
+            txtNome.Text = usuarioList[position].nome;
+            txtTelefone.Text = usuarioList[position].telefone;
             btnEdit.Click += delegate
             {
                 Toast.MakeText(context, "Editando", ToastLength.Short);

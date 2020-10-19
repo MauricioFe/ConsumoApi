@@ -1,10 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net.Http;
+using System.Runtime.Serialization.Json;
+using System.Text;
+using System.Threading.Tasks;
 using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Runtime;
+using Android.Views;
 using Android.Widget;
-using System.Web;
-using Newtonsoft.Json;
 
 namespace ConsumoApi
 {
@@ -18,7 +25,7 @@ namespace ConsumoApi
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_rest);
             GetUsuariosAsync();
-            listView = FindViewById<ListView>(Resource.Id.list_rest_usuario);
+             listView = FindViewById<ListView>(Resource.Id.list_rest_usuario);
         }
 
         private async void GetUsuariosAsync()
@@ -27,9 +34,10 @@ namespace ConsumoApi
             {
                 var response = await client.GetAsync($"http://192.168.0.109:5000/api/usuarios");
                 var content = await response.Content.ReadAsStringAsync();
-
-                usuarioList = JsonConvert.DeserializeObject<List<Usuario>>(content);
-
+                var parseJson = new DataContractJsonSerializer(typeof(List<Usuario>));
+                MemoryStream memory = new MemoryStream(Encoding.UTF8.GetBytes(content));
+                usuarioList = (List<Usuario>)parseJson.ReadObject(memory);
+                
                 UsuarioAdapter adapter = new UsuarioAdapter(this, usuarioList);
 
                 listView.Adapter = adapter;
